@@ -1,49 +1,50 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
 export const BottomBar = ({ skip }) => {
     return (
-    <div class="fixed z-30 bottom-0 left-0 right-0 bg-rem-bg border-t border-rem-border p-4 animate-[slide-up_0.5s_ease-in-out]">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-3 text-xs text-gray-400 text-center">
+    <div className="fixed z-30 bottom-0 left-0 right-0 bg-rem-bg border-t border-rem-border p-4 animate-[slide-up_0.5s_ease-in-out]">
+        <div className="max-w-7xl mx-auto">
+            <div className="mb-3 text-xs text-gray-400 text-center">
                 Imagery and information shown throughout this website may not reflect the exact shape or size specification, colours may vary, options and/or accessories may be featured at additional cost.
             </div>
-            <div class="lg:hidden">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="font-medium"> {skip && skip.size} Yard Skip </h3>
+            <div className="lg:hidden">
+                <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-medium"> {skip && skip.size} Yard Skip </h3>
                     <div>
-                        <span class="text-xl font-bold text-rem-500">
+                        <span className="text-xl font-bold text-rem-500">
                             £{ skip && (skip.price_before_vat + skip.vat)}
                         </span>
-                        <span class="text-sm text-gray-400 ml-2">
+                        <span className="text-sm text-gray-400 ml-2">
                             { skip && skip.hire_period_days } days
                         </span>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <button class="btn-secondary w-full">Back</button>
-                    <button class="bg-rem-800 hover:bg-rem-950 text-white font-bold py-2 px-4 rounded items-center gap-2 w-full ">Continue</button>
+                <div className="grid grid-cols-2 gap-3">
+                    <button className="btn-secondary w-full">Back</button>
+                    <button className="bg-rem-800 hover:bg-rem-950 text-white font-bold py-2 px-4 rounded items-center gap-2 w-full ">Continue</button>
                 </div>
             </div>
-            <div class="hidden lg:flex items-center justify-between">
-                <div class="flex items-center gap-6">
+            <div className="hidden lg:flex items-center justify-between">
+                <div className="flex items-center gap-6">
                     <div>
-                        <p class="text-sm text-gray-400"> {skip && skip.size} Yard Skip </p>
+                        <p className="text-sm text-gray-400"> {skip && skip.size} Yard Skip </p>
                     </div>
                     <div>
-                        <span class="text-2xl font-bold text-rem-500">
+                        <span className="text-2xl font-bold text-rem-500">
                             £{ skip && (skip.price_before_vat + skip.vat)}
                         </span>
-                        <span class="text-sm text-gray-400 ml-2">
+                        <span className="text-sm text-gray-400 ml-2">
                             { skip && skip.hire_period_days } day hire
                         </span>
                     </div>
                 </div>
-                <div class="flex items-center gap-4">
-                    <button class="btn-secondary">Back</button>
+                <div className="flex items-center gap-4">
+                    <button className="btn-secondary">Back</button>
 
-                    <button class="bg-rem-800 hover:bg-rem-950 text-white font-bold py-2 px-4 rounded flex items-center gap-2">
+                    <button className="bg-rem-800 hover:bg-rem-950 text-white font-bold py-2 px-4 rounded flex items-center gap-2">
                         Continue
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-arrow-right w-4 h-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right w-4 h-4">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg>

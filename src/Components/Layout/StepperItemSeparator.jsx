@@ -1,3 +1,4 @@
+import React from "react";
 import { IoArrowDown } from "react-icons/io5";
 
 export const StepperItemSeparator = ({ isActive = false }) => {
