@@ -1,12 +1,19 @@
-# React + Vite
+# WeWantWaste UI Interview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Build with
+- React + Vite
 
-Currently, two official plugins are available:
+## Setup.
+- clone repo
+- navigate to root and install deps `npm i`
+- access page at : [http://localhost:5173/theambidextrous-rem-waste-eval/](http://localhost:5173/theambidextrous-rem-waste-eval/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Deployment
+Send this out to github pages
+- run `npm run deploy` command
+- access page at: [https://theambidextrous.github.io/theambidextrous-rem-waste-eval/](https://theambidextrous.github.io/theambidextrous-rem-waste-eval/)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Testing
+To run the tests in the project
+- run `npm run test` to execute test suites
+- run `npm run test:coverage` to execute tests with coverage
