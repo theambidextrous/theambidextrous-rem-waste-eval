@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const BottomBar = ({ skip }) => {
     return (
-    <div class="fixed bottom-0 left-0 right-0 bg-rem-bg border-t border-rem-border p-4 animate-[slide-up_0.5s_ease-in-out]">
+    <div class="fixed z-30 bottom-0 left-0 right-0 bg-rem-bg border-t border-rem-border p-4 animate-[slide-up_0.5s_ease-in-out]">
         <div class="max-w-7xl mx-auto">
             <div class="mb-3 text-xs text-gray-400 text-center">
                 Imagery and information shown throughout this website may not reflect the exact shape or size specification, colours may vary, options and/or accessories may be featured at additional cost.
