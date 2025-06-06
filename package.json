@@ -3,14 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://theambidextrous.github.io/theambidextrous-rem-waste-eval/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@netlify/vite-plugin": "^2.1.3",
     "axios": "^1.9.0",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",
